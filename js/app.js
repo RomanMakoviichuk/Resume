@@ -3217,10 +3217,10 @@
         initSliders();
     }));
     let prevScrollPos = window.pageYOffset;
+    let header = document.querySelector("header");
     window.addEventListener("scroll", (function() {
         let currentScrollPos = window.pageYOffset;
-        let header = document.querySelector("header");
-        if (prevScrollPos > currentScrollPos) header.classList.remove("sticky"); else header.classList.add("sticky");
+        if (currentScrollPos === 0) header.classList.remove("sticky"); else if (prevScrollPos > currentScrollPos) header.classList.remove("sticky"); else header.classList.add("sticky");
         prevScrollPos = currentScrollPos;
     }));
     const script_anchors = document.querySelectorAll('a[href*="#"]');

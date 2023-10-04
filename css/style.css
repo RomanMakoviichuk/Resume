@@ -175,6 +175,8 @@ body {
   border-bottom: 0.0625rem solid #696969;
   z-index: 6;
   background-color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header__container {
