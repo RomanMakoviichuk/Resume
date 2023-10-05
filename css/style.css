@@ -590,6 +590,10 @@ body {
   width: 3.75rem;
 }
 
+.gulp img {
+  max-width: 11.22%;
+}
+
 .whyme {
   padding-bottom: 5rem;
 }
